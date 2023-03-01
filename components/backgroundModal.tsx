@@ -83,6 +83,7 @@ export default function BackgroundModal({
                                         `https://raw.githubusercontent.com/0neGal/albumArtCreator/main/src/backgrounds/${i}.png`
                                     )
                                 }
+                                key={i}
                             ></div>
                         );
                     })}
