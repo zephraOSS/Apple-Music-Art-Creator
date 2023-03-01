@@ -1,0 +1,85 @@
+/* Copyrighted by 0neGuyDev */
+
+@font-face {
+    font-weight: 900;
+    font-style: normal;
+    font-family: "SFMono";
+    src: url("/fonts/SFMono/Heavy.ttf") format("truetype");
+}
+
+@font-face {
+    font-weight: 900;
+    font-style: italic;
+    font-family: "SFMono";
+    src: url("/fonts/SFMono/HeavyItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-weight: 800;
+    font-style: normal;
+    font-family: "SFMono";
+    src: url("/fonts/SFMono/Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-weight: 800;
+    font-style: italic;
+    font-family: "SFMono";
+    src: url("/fonts/SFMono/BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-weight: 700;
+    font-style: normal;
+    font-family: "SFMono";
+    src: url("/fonts/SFMono/SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-weight: 700;
+    font-style: italic;
+    font-family: "SFMono";
+    src: url("/fonts/SFMono/SemiBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-weight: 600;
+    font-style: normal;
+    font-family: "SFMono";
+    src: url("/fonts/SFMono/Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-weight: 600;
+    font-style: italic;
+    font-family: "SFMono";
+    src: url("/fonts/SFMono/MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-weight: 500;
+    font-style: normal;
+    font-family: "SFMono";
+    src: url("/fonts/SFMono/Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-weight: 500;
+    font-style: italic;
+    font-family: "SFMono";
+    src: url("/fonts/SFMono/RegularItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-weight: 400;
+    font-style: normal;
+    font-family: "SFMono";
+    src: url("/fonts/SFMono/Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-weight: 400;
+    font-style: italic;
+    font-family: "SFMono";
+    src: url("/fonts/SFMono/LightItalic.ttf") format("truetype");
+}

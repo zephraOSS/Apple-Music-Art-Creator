@@ -1,0 +1,157 @@
+.container {
+    position: relative;
+    display: grid;
+    width: 80%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.albumArtContainer {
+    position: relative;
+    width: 512px;
+    height: 512px;
+    border-radius: 16px;
+}
+
+.albumArt {
+    width: 100%;
+    height: 100%;
+    background: url("https://raw.githubusercontent.com/0neGal/albumArtCreator/main/src/backgrounds/8.png");
+    background-size: cover;
+    border-radius: inherit;
+    user-select: none;
+}
+
+.albumArt > div {
+    transition: 0.3s opacity ease-in-out, 0.3s transform ease-in-out,
+        0.3s left ease-in-out;
+}
+
+.albumArt > .appleLogo {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+}
+
+.albumArt > .bigTitle,
+.albumArt > .subTitle,
+.albumArt > .subText {
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: white;
+    font-family: SFPro, Arial, Helvetica, sans-serif;
+}
+
+.albumArt > .bigTitle {
+    /* appleLogoTop * 2 + appleLogoHeight - (bigTitleLineHeight - bigTitleFontSize) */
+    top: calc(35px * 2 + 25px - (90px - 80px));
+    left: 40px;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 90px;
+}
+
+.albumArt > .subTitle {
+    font-weight: 300;
+    top: 157px;
+    left: 40px;
+    font-size: 60px;
+}
+
+.albumArt > .subText {
+    font-weight: 500;
+    bottom: 35px;
+    left: 40px;
+    font-size: 15px;
+}
+
+.configContainer {
+    position: relative;
+    width: 25em;
+}
+
+.configItem {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 0.5fr;
+}
+
+.configItem:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.configItem:not(:first-child):has(.configName)::after {
+    content: "";
+    position: absolute;
+    width: 66%;
+    height: 1px;
+    bottom: 8px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.configButtons {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px 4px;
+}
+
+.configInput,
+.configButton {
+    width: 95%;
+    height: 4rem;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    color: #333;
+    font-family: SFPro, Arial, Helvetica, sans-serif;
+}
+
+.configButton {
+    cursor: pointer;
+    transition: 0.3s background ease-in-out;
+}
+
+.configButton:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.configInput[type="checkbox"] {
+    height: 2em;
+    cursor: pointer;
+}
+
+.configInput[type="color"] {
+    height: 100%;
+    min-height: 4em;
+}
+
+.configInput.bigTitle {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.configInput.subTitle {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.configInput.subText {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.configName {
+    display: block;
+    text-align: center;
+}
